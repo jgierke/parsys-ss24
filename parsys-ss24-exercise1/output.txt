@@ -1,0 +1,1022 @@
+<<< Simulation of CarWashPark >>>
+
+17:42:20: --- now in 1. hour ---
+17:42:20: 1 cars arrive.
+I'm Car[1, false]
+17:42:21: Car[1, false] entered WashingLine[1, false]
+17:42:21: Washing of Car[1, false] begins.
+17:42:26: 3 cars arrive.
+I'm Car[2, true]
+I'm Car[3, false]
+I'm Car[4, true]
+17:42:26: Car[3, false] entered WashingLine[2, false]
+17:42:26: Washing of Car[3, false] begins.
+17:42:26: Car[2, true] entered InteriorCleaningBox[1, false]
+17:42:26: Car[4, true] entered InteriorCleaningBox[2, false]
+17:42:26: Interior cleaning of Car[4, true] begins.
+17:42:26: Interior cleaning of Car[2, true] begins.
+17:42:29: Washing of Car[1, false] ends.
+17:42:29: Car[1, false] left WashingLine[1, true]
+17:42:31: 2 cars arrive.
+I'm Car[5, false]
+17:42:31: Car[5, false] entered WashingLine[1, false]
+17:42:31: Washing of Car[5, false] begins.
+I'm Car[6, true]
+17:42:31: Car[6, true] entered WashingLine[3, false]
+17:42:31: Washing of Car[6, true] begins.
+17:42:33: Washing of Car[3, false] ends.
+17:42:33: Car[3, false] left WashingLine[2, true]
+17:42:36: Interior cleaning of Car[4, true] ends.
+17:42:36: Interior cleaning of Car[2, true] ends.
+17:42:36: Car[4, true] left InteriorCleaningBox[2, true]
+17:42:36: Car[4, true] entered WashingLine[2, false]
+17:42:36: Washing of Car[4, true] begins.
+17:42:36: Car[2, true] left InteriorCleaningBox[1, true]
+17:42:36: no free washing lines. Car[2, true] must wait.
+17:42:36: Washing of Car[5, false] ends.
+17:42:36: Car[5, false] left WashingLine[1, true]
+17:42:36: 1 cars arrive.
+17:42:36: Car[2, true] entered WashingLine[1, false]
+17:42:36: Washing of Car[2, true] begins.
+I'm Car[7, false]
+17:42:36: no free washing lines. Car[7, false] must wait.
+17:42:39: Washing of Car[6, true] ends.
+17:42:39: Car[6, true] left WashingLine[3, true]
+17:42:39: Car[6, true] entered InteriorCleaningBox[1, false]
+17:42:39: Interior cleaning of Car[6, true] begins.
+17:42:39: Car[7, false] entered WashingLine[3, false]
+17:42:39: Washing of Car[7, false] begins.
+17:42:41: 2 cars arrive.
+I'm Car[8, true]
+17:42:41: Car[8, true] entered InteriorCleaningBox[2, false]
+I'm Car[9, false]
+17:42:41: no free washing lines. Car[9, false] must wait.
+17:42:41: Interior cleaning of Car[8, true] begins.
+17:42:42: Washing of Car[2, true] ends.
+17:42:42: Car[2, true] left WashingLine[1, true]
+17:42:42: Car[9, false] entered WashingLine[1, false]
+17:42:42: Washing of Car[9, false] begins.
+17:42:44: Interior cleaning of Car[6, true] ends.
+17:42:44: Car[6, true] left InteriorCleaningBox[1, true]
+17:42:46: 3 cars arrive.
+I'm Car[10, true]
+17:42:46: Car[10, true] entered InteriorCleaningBox[1, false]
+I'm Car[11, false]
+17:42:46: no free washing lines. Car[11, false] must wait.
+17:42:46: Interior cleaning of Car[10, true] begins.
+I'm Car[12, true]
+17:42:46: no free washing lines. Car[12, true] must wait.
+17:42:47: Washing of Car[4, true] ends.
+17:42:47: Car[4, true] left WashingLine[2, true]
+17:42:47: Car[11, false] entered WashingLine[2, false]
+17:42:47: Washing of Car[11, false] begins.
+17:42:51: Washing of Car[7, false] ends.
+17:42:51: Car[7, false] left WashingLine[3, true]
+17:42:51: Car[12, true] entered WashingLine[3, false]
+17:42:51: Washing of Car[12, true] begins.
+17:42:51: Interior cleaning of Car[8, true] ends.
+17:42:51: Car[8, true] left InteriorCleaningBox[2, true]
+17:42:51: no free washing lines. Car[8, true] must wait.
+17:42:51: 2 cars arrive.
+I'm Car[13, false]
+I'm Car[14, true]
+17:42:51: no free washing lines. Car[13, false] must wait.
+17:42:51: Car[14, true] entered InteriorCleaningBox[2, false]
+17:42:51: Interior cleaning of Car[14, true] begins.
+17:42:52: Washing of Car[9, false] ends.
+17:42:52: Car[9, false] left WashingLine[1, true]
+17:42:52: Car[8, true] entered WashingLine[1, false]
+17:42:52: Washing of Car[8, true] begins.
+17:42:54: Washing of Car[11, false] ends.
+17:42:54: Car[11, false] left WashingLine[2, true]
+17:42:54: Car[13, false] entered WashingLine[2, false]
+17:42:54: Washing of Car[13, false] begins.
+17:42:56: 1 cars arrive.
+I'm Car[15, false]
+17:42:56: no free washing lines. Car[15, false] must wait.
+17:42:58: Washing of Car[8, true] ends.
+17:42:58: Car[8, true] left WashingLine[1, true]
+17:42:58: Car[15, false] entered WashingLine[1, false]
+17:42:58: Washing of Car[15, false] begins.
+17:43: Washing of Car[12, true] ends.
+17:43: Car[12, true] left WashingLine[3, true]
+17:43: no free interior cleaning boxes. Car[12, true] must wait.
+17:43:01: Interior cleaning of Car[10, true] ends.
+17:43:01: Car[10, true] left InteriorCleaningBox[1, true]
+17:43:01: Car[10, true] entered WashingLine[3, false]
+17:43:01: Car[12, true] entered InteriorCleaningBox[1, false]
+17:43:01: Interior cleaning of Car[12, true] begins.
+17:43:01: Washing of Car[10, true] begins.
+17:43:01: Interior cleaning of Car[14, true] ends.
+17:43:01: Car[14, true] left InteriorCleaningBox[2, true]
+17:43:01: no free washing lines. Car[14, true] must wait.
+17:43:01: 1 cars arrive.
+I'm Car[16, true]
+17:43:01: Car[16, true] entered InteriorCleaningBox[2, false]
+17:43:01: Interior cleaning of Car[16, true] begins.
+17:43:06: Washing of Car[13, false] ends.
+17:43:06: Car[13, false] left WashingLine[2, true]
+17:43:06: Car[14, true] entered WashingLine[2, false]
+17:43:06: Washing of Car[14, true] begins.
+17:43:06: 2 cars arrive.
+I'm Car[17, false]
+I'm Car[18, true]
+17:43:06: no free washing lines. Car[17, false] must wait.
+17:43:06: no free washing lines. Car[18, true] must wait.
+17:43:09: Washing of Car[15, false] ends.
+17:43:09: Car[15, false] left WashingLine[1, true]
+17:43:09: Car[17, false] entered WashingLine[1, false]
+17:43:09: Washing of Car[17, false] begins.
+17:43:11: Interior cleaning of Car[12, true] ends.
+17:43:11: Car[12, true] left InteriorCleaningBox[1, true]
+17:43:11: 1 cars arrive.
+I'm Car[19, false]
+17:43:11: no free washing lines. Car[19, false] must wait.
+17:43:12: Washing of Car[10, true] ends.
+17:43:12: Car[10, true] left WashingLine[3, true]
+17:43:12: Car[18, true] entered WashingLine[3, false]
+17:43:12: Washing of Car[18, true] begins.
+17:43:16: Washing of Car[14, true] ends.
+17:43:16: Car[14, true] left WashingLine[2, true]
+17:43:16: Car[19, false] entered WashingLine[2, false]
+17:43:16: Washing of Car[19, false] begins.
+17:43:16: Washing of Car[17, false] ends.
+17:43:16: Car[17, false] left WashingLine[1, true]
+17:43:16: Interior cleaning of Car[16, true] ends.
+17:43:16: 1 cars arrive.
+17:43:16: Car[16, true] left InteriorCleaningBox[2, true]
+17:43:16: Car[16, true] entered WashingLine[1, false]
+17:43:16: Washing of Car[16, true] begins.
+I'm Car[20, true]
+17:43:16: Car[20, true] entered InteriorCleaningBox[1, false]
+17:43:16: Interior cleaning of Car[20, true] begins.
+17:43:18: Washing of Car[18, true] ends.
+17:43:18: Car[18, true] left WashingLine[3, true]
+17:43:18: Car[18, true] entered InteriorCleaningBox[2, false]
+17:43:18: Interior cleaning of Car[18, true] begins.
+17:43:21: --- now in 2. hour ---
+17:43:21: Interior cleaning of Car[20, true] ends.
+17:43:21: Car[20, true] left InteriorCleaningBox[1, true]
+17:43:21: 4 cars arrive.
+17:43:21: Car[20, true] entered WashingLine[3, false]
+17:43:21: Washing of Car[20, true] begins.
+I'm Car[21, false]
+17:43:21: no free washing lines. Car[21, false] must wait.
+I'm Car[22, false]
+17:43:21: no free washing lines. Car[22, false] must wait.
+I'm Car[23, true]
+17:43:21: Car[23, true] entered InteriorCleaningBox[1, false]
+17:43:21: Interior cleaning of Car[23, true] begins.
+I'm Car[24, false]
+17:43:21: no free washing lines. Car[24, false] must wait.
+17:43:22: Washing of Car[19, false] ends.
+17:43:22: Car[19, false] left WashingLine[2, true]
+17:43:22: Car[21, false] entered WashingLine[2, false]
+17:43:22: Washing of Car[21, false] begins.
+17:43:23: Interior cleaning of Car[18, true] ends.
+17:43:23: Car[18, true] left InteriorCleaningBox[2, true]
+17:43:26: Washing of Car[16, true] ends.
+17:43:26: Car[16, true] left WashingLine[1, true]
+17:43:26: 4 cars arrive.
+17:43:26: Car[22, false] entered WashingLine[1, false]
+17:43:26: Washing of Car[22, false] begins.
+I'm Car[25, false]
+17:43:26: no free washing lines. Car[25, false] must wait.
+I'm Car[26, true]
+I'm Car[27, false]
+17:43:26: no free washing lines. Car[27, false] must wait.
+I'm Car[28, false]
+17:43:26: no free washing lines. Car[28, false] must wait.
+17:43:26: Car[26, true] entered InteriorCleaningBox[2, false]
+17:43:26: Interior cleaning of Car[26, true] begins.
+17:43:31: Interior cleaning of Car[23, true] ends.
+17:43:31: 3 cars arrive.
+I'm Car[29, true]
+I'm Car[30, false]
+17:43:31: no free washing lines. Car[30, false] must wait.
+17:43:31: Washing of Car[22, false] ends.
+17:43:31: Interior cleaning of Car[26, true] ends.
+I'm Car[31, false]
+17:43:31: Car[23, true] left InteriorCleaningBox[1, true]
+17:43:31: Car[26, true] left InteriorCleaningBox[2, true]
+17:43:31: Car[22, false] left WashingLine[1, true]
+17:43:31: Car[29, true] entered InteriorCleaningBox[1, false]
+17:43:31: Car[26, true] entered WashingLine[1, false]
+17:43:31: Interior cleaning of Car[29, true] begins.
+17:43:31: no free washing lines. Car[24, false] must wait.
+17:43:31: Washing of Car[26, true] begins.
+17:43:33: Washing of Car[20, true] ends.
+17:43:33: Car[20, true] left WashingLine[3, true]
+17:43:33: Car[25, false] entered WashingLine[3, false]
+17:43:33: Washing of Car[25, false] begins.
+17:43:34: Washing of Car[21, false] ends.
+17:43:34: Car[21, false] left WashingLine[2, true]
+17:43:34: Car[27, false] entered WashingLine[2, false]
+17:43:34: Washing of Car[27, false] begins.
+17:43:36: Washing of Car[26, true] ends.
+17:43:36: Car[26, true] left WashingLine[1, true]
+17:43:36: 5 cars arrive.
+17:43:36: Car[23, true] entered WashingLine[1, false]
+17:43:36: no free washing lines. Car[28, false] must wait.
+17:43:36: Washing of Car[23, true] begins.
+I'm Car[32, true]
+I'm Car[34, false]
+17:43:36: no free washing lines. Car[34, false] must wait.
+I'm Car[35, true]
+17:43:36: Car[32, true] entered InteriorCleaningBox[2, false]
+I'm Car[36, false]
+17:43:36: no free washing lines. Car[35, true] must wait.
+17:43:36: Interior cleaning of Car[32, true] begins.
+I'm Car[33, false]
+17:43:36: no free washing lines. Car[36, false] must wait.
+17:43:36: no free washing lines. Car[33, false] must wait.
+17:43:41: Washing of Car[27, false] ends.
+17:43:41: Car[27, false] left WashingLine[2, true]
+17:43:41: Car[30, false] entered WashingLine[2, false]
+17:43:41: Washing of Car[30, false] begins.
+17:43:41: Washing of Car[25, false] ends.
+17:43:41: Car[25, false] left WashingLine[3, true]
+17:43:41: Car[24, false] entered WashingLine[3, false]
+17:43:41: Washing of Car[24, false] begins.
+17:43:41: 3 cars arrive.
+I'm Car[37, false]
+17:43:41: no free washing lines. Car[37, false] must wait.
+I'm Car[38, true]
+17:43:41: no free washing lines. Car[38, true] must wait.
+I'm Car[39, false]
+17:43:41: no free washing lines. Car[39, false] must wait.
+17:43:44: Washing of Car[23, true] ends.
+17:43:44: Car[23, true] left WashingLine[1, true]
+17:43:44: Car[31, false] entered WashingLine[1, false]
+17:43:44: no free washing lines. Car[28, false] must wait.
+17:43:44: Washing of Car[31, false] begins.
+17:43:46: Interior cleaning of Car[29, true] ends.
+17:43:46: Car[29, true] left InteriorCleaningBox[1, true]
+17:43:46: no free washing lines. Car[29, true] must wait.
+17:43:46: Interior cleaning of Car[32, true] ends.
+17:43:46: Car[32, true] left InteriorCleaningBox[2, true]
+17:43:46: 4 cars arrive.
+17:43:46: no free washing lines. Car[32, true] must wait.
+I'm Car[40, false]
+17:43:46: no free washing lines. Car[40, false] must wait.
+I'm Car[41, true]
+17:43:46: Car[41, true] entered InteriorCleaningBox[1, false]
+17:43:46: Interior cleaning of Car[41, true] begins.
+I'm Car[42, false]
+17:43:46: no free washing lines. Car[42, false] must wait.
+I'm Car[43, false]
+17:43:46: no free washing lines. Car[43, false] must wait.
+17:43:49: Washing of Car[30, false] ends.
+17:43:49: Car[30, false] left WashingLine[2, true]
+17:43:49: Car[34, false] entered WashingLine[2, false]
+17:43:49: Washing of Car[34, false] begins.
+17:43:50: Washing of Car[24, false] ends.
+17:43:50: Car[24, false] left WashingLine[3, true]
+17:43:50: Car[35, true] entered WashingLine[3, false]
+17:43:50: Washing of Car[35, true] begins.
+17:43:51: Interior cleaning of Car[41, true] ends.
+17:43:51: 4 cars arrive.
+17:43:51: Car[41, true] left InteriorCleaningBox[1, true]
+17:43:51: no free washing lines. Car[41, true] must wait.
+I'm Car[44, true]
+17:43:51: Car[44, true] entered InteriorCleaningBox[1, false]
+17:43:51: Interior cleaning of Car[44, true] begins.
+I'm Car[45, false]
+17:43:51: no free washing lines. Car[45, false] must wait.
+I'm Car[47, true]
+17:43:51: Car[47, true] entered InteriorCleaningBox[2, false]
+I'm Car[46, false]
+17:43:51: Interior cleaning of Car[47, true] begins.
+17:43:51: no free washing lines. Car[46, false] must wait.
+17:43:55: Washing of Car[35, true] ends.
+17:43:55: Car[35, true] left WashingLine[3, true]
+17:43:55: no free interior cleaning boxes. Car[35, true] must wait.
+17:43:55: Car[36, false] entered WashingLine[3, false]
+17:43:55: Washing of Car[36, false] begins.
+17:43:56: Washing of Car[31, false] ends.
+17:43:56: Car[31, false] left WashingLine[1, true]
+17:43:56: Car[33, false] entered WashingLine[1, false]
+17:43:56: Washing of Car[33, false] begins.
+17:43:56: 3 cars arrive.
+I'm Car[48, false]
+I'm Car[50, true]
+17:43:56: no free washing lines. Car[48, false] must wait.
+I'm Car[49, false]
+17:43:56: no free washing lines. Car[50, true] must wait.
+17:43:56: no free washing lines. Car[49, false] must wait.
+17:44:01: Washing of Car[34, false] ends.
+17:44:01: Car[34, false] left WashingLine[2, true]
+17:44:01: Car[37, false] entered WashingLine[2, false]
+17:44:01: Washing of Car[37, false] begins.
+17:44:01: Interior cleaning of Car[47, true] ends.
+17:44:01: Car[47, true] left InteriorCleaningBox[2, true]
+17:44:01: Interior cleaning of Car[44, true] ends.
+17:44:01: Car[35, true] entered InteriorCleaningBox[2, false]
+17:44:01: Interior cleaning of Car[35, true] begins.
+17:44:01: no free washing lines. Car[47, true] must wait.
+17:44:01: Car[44, true] left InteriorCleaningBox[1, true]
+17:44:01: no free washing lines. Car[44, true] must wait.
+17:44:01: 3 cars arrive.
+I'm Car[51, false]
+17:44:01: no free washing lines. Car[51, false] must wait.
+I'm Car[52, false]
+17:44:01: no free washing lines. Car[52, false] must wait.
+I'm Car[53, true]
+17:44:01: Car[53, true] entered InteriorCleaningBox[1, false]
+17:44:01: Interior cleaning of Car[53, true] begins.
+17:44:06: Washing of Car[36, false] ends.
+17:44:06: Car[36, false] left WashingLine[3, true]
+17:44:06: Car[38, true] entered WashingLine[3, false]
+17:44:06: Washing of Car[38, true] begins.
+17:44:06: Interior cleaning of Car[35, true] ends.
+17:44:06: Car[35, true] left InteriorCleaningBox[2, true]
+17:44:06: 5 cars arrive.
+I'm Car[54, false]
+17:44:06: no free washing lines. Car[54, false] must wait.
+I'm Car[58, false]
+17:44:06: no free washing lines. Car[58, false] must wait.
+I'm Car[56, true]
+17:44:06: Car[56, true] entered InteriorCleaningBox[2, false]
+17:44:06: Interior cleaning of Car[56, true] begins.
+I'm Car[57, false]
+17:44:06: no free washing lines. Car[57, false] must wait.
+I'm Car[55, false]
+17:44:06: no free washing lines. Car[55, false] must wait.
+17:44:07: Washing of Car[33, false] ends.
+17:44:07: Car[33, false] left WashingLine[1, true]
+17:44:07: Car[39, false] entered WashingLine[1, false]
+17:44:07: Washing of Car[39, false] begins.
+17:44:10: Washing of Car[37, false] ends.
+17:44:10: Car[37, false] left WashingLine[2, true]
+17:44:10: Car[28, false] entered WashingLine[2, false]
+17:44:10: Washing of Car[28, false] begins.
+17:44:11: Interior cleaning of Car[53, true] ends.
+17:44:11: Car[53, true] left InteriorCleaningBox[1, true]
+17:44:11: 4 cars arrive.
+17:44:11: no free washing lines. Car[53, true] must wait.
+I'm Car[59, true]
+17:44:11: Car[59, true] entered InteriorCleaningBox[1, false]
+17:44:11: Interior cleaning of Car[59, true] begins.
+I'm Car[60, false]
+17:44:11: no free washing lines. Car[60, false] must wait.
+I'm Car[61, false]
+17:44:11: no free washing lines. Car[61, false] must wait.
+I'm Car[62, true]
+17:44:11: no free washing lines. Car[62, true] must wait.
+17:44:16: Interior cleaning of Car[56, true] ends.
+17:44:16: 5 cars arrive.
+17:44:16: Interior cleaning of Car[59, true] ends.
+17:44:16: Car[56, true] left InteriorCleaningBox[2, true]
+17:44:16: Car[59, true] left InteriorCleaningBox[1, true]
+17:44:16: no free washing lines. Car[56, true] must wait.
+17:44:16: no free washing lines. Car[59, true] must wait.
+I'm Car[63, false]
+I'm Car[64, false]
+17:44:16: no free washing lines. Car[63, false] must wait.
+I'm Car[65, true]
+17:44:16: Car[65, true] entered InteriorCleaningBox[1, false]
+17:44:16: no free washing lines. Car[64, false] must wait.
+I'm Car[66, false]
+17:44:16: no free washing lines. Car[66, false] must wait.
+17:44:16: Interior cleaning of Car[65, true] begins.
+I'm Car[67, false]
+17:44:16: no free washing lines. Car[67, false] must wait.
+17:44:17: Washing of Car[39, false] ends.
+17:44:17: Car[39, false] left WashingLine[1, true]
+17:44:17: Car[29, true] entered WashingLine[1, false]
+17:44:17: Washing of Car[29, true] begins.
+17:44:18: Washing of Car[38, true] ends.
+17:44:18: Car[38, true] left WashingLine[3, true]
+17:44:18: Car[38, true] entered InteriorCleaningBox[2, false]
+17:44:18: Interior cleaning of Car[38, true] begins.
+17:44:18: Car[32, true] entered WashingLine[3, false]
+17:44:18: Washing of Car[32, true] begins.
+17:44:19: Washing of Car[28, false] ends.
+17:44:19: Car[28, false] left WashingLine[2, true]
+17:44:19: Car[40, false] entered WashingLine[2, false]
+17:44:19: Washing of Car[40, false] begins.
+17:44:21: --- now in 3. hour ---
+17:44:21: Interior cleaning of Car[65, true] ends.
+17:44:21: 2 cars arrive.
+17:44:21: Car[65, true] left InteriorCleaningBox[1, true]
+17:44:21: no free washing lines. Car[65, true] must wait.
+I'm Car[68, true]
+17:44:21: Car[68, true] entered InteriorCleaningBox[1, false]
+17:44:21: Interior cleaning of Car[68, true] begins.
+I'm Car[69, true]
+17:44:21: no free washing lines. Car[69, true] must wait.
+17:44:23: Washing of Car[29, true] ends.
+17:44:23: Car[29, true] left WashingLine[1, true]
+17:44:23: Car[42, false] entered WashingLine[1, false]
+17:44:23: Washing of Car[42, false] begins.
+17:44:25: Washing of Car[32, true] ends.
+17:44:25: Car[32, true] left WashingLine[3, true]
+17:44:25: Car[43, false] entered WashingLine[3, false]
+17:44:25: Washing of Car[43, false] begins.
+17:44:26: 1 cars arrive.
+I'm Car[70, true]
+17:44:26: no free washing lines. Car[70, true] must wait.
+17:44:28: Washing of Car[40, false] ends.
+17:44:28: Car[40, false] left WashingLine[2, true]
+17:44:28: Car[41, true] entered WashingLine[2, false]
+17:44:28: Washing of Car[41, true] begins.
+17:44:28: Interior cleaning of Car[38, true] ends.
+17:44:28: Car[38, true] left InteriorCleaningBox[2, true]
+17:44:29: Washing of Car[42, false] ends.
+17:44:29: Car[42, false] left WashingLine[1, true]
+17:44:29: Car[45, false] entered WashingLine[1, false]
+17:44:29: Washing of Car[45, false] begins.
+17:44:31: 2 cars arrive.
+I'm Car[71, true]
+17:44:31: Car[71, true] entered InteriorCleaningBox[2, false]
+17:44:31: Interior cleaning of Car[71, true] begins.
+I'm Car[72, true]
+17:44:31: no free washing lines. Car[72, true] must wait.
+17:44:33: Washing of Car[43, false] ends.
+17:44:33: Car[43, false] left WashingLine[3, true]
+17:44:33: Car[46, false] entered WashingLine[3, false]
+17:44:33: Washing of Car[46, false] begins.
+17:44:34: Washing of Car[41, true] ends.
+17:44:34: Car[41, true] left WashingLine[2, true]
+17:44:34: Car[48, false] entered WashingLine[2, false]
+17:44:34: Washing of Car[48, false] begins.
+17:44:36: Interior cleaning of Car[68, true] ends.
+17:44:36: Car[68, true] left InteriorCleaningBox[1, true]
+17:44:36: no free washing lines. Car[68, true] must wait.
+17:44:36: Interior cleaning of Car[71, true] ends.
+17:44:36: Car[71, true] left InteriorCleaningBox[2, true]
+17:44:36: 2 cars arrive.
+17:44:36: no free washing lines. Car[71, true] must wait.
+I'm Car[73, true]
+I'm Car[74, true]
+17:44:36: Car[74, true] entered InteriorCleaningBox[2, false]
+17:44:36: Interior cleaning of Car[74, true] begins.
+17:44:36: Car[73, true] entered InteriorCleaningBox[1, false]
+17:44:36: Interior cleaning of Car[73, true] begins.
+17:44:37: Washing of Car[45, false] ends.
+17:44:37: Car[45, false] left WashingLine[1, true]
+17:44:37: Car[50, true] entered WashingLine[1, false]
+17:44:37: Washing of Car[50, true] begins.
+17:44:39: Washing of Car[48, false] ends.
+17:44:39: Car[48, false] left WashingLine[2, true]
+17:44:39: Car[49, false] entered WashingLine[2, false]
+17:44:39: Washing of Car[49, false] begins.
+17:44:41: Washing of Car[46, false] ends.
+17:44:41: Car[46, false] left WashingLine[3, true]
+17:44:41: Car[47, true] entered WashingLine[3, false]
+17:44:41: Washing of Car[47, true] begins.
+17:44:41: 2 cars arrive.
+I'm Car[75, true]
+17:44:41: no free washing lines. Car[75, true] must wait.
+I'm Car[76, true]
+17:44:41: no free washing lines. Car[76, true] must wait.
+17:44:44: Washing of Car[49, false] ends.
+17:44:44: Car[49, false] left WashingLine[2, true]
+17:44:44: Car[44, true] entered WashingLine[2, false]
+17:44:44: Washing of Car[44, true] begins.
+17:44:46: Washing of Car[50, true] ends.
+17:44:46: Car[50, true] left WashingLine[1, true]
+17:44:46: no free interior cleaning boxes. Car[50, true] must wait.
+17:44:46: Car[51, false] entered WashingLine[1, false]
+17:44:46: Washing of Car[51, false] begins.
+17:44:46: Interior cleaning of Car[74, true] ends.
+17:44:46: Car[74, true] left InteriorCleaningBox[2, true]
+17:44:46: no free washing lines. Car[74, true] must wait.
+17:44:46: Car[50, true] entered InteriorCleaningBox[2, false]
+17:44:46: Interior cleaning of Car[50, true] begins.
+17:44:46: 2 cars arrive.
+I'm Car[77, true]
+17:44:46: no free washing lines. Car[77, true] must wait.
+I'm Car[78, true]
+17:44:46: no free washing lines. Car[78, true] must wait.
+17:44:47: Washing of Car[47, true] ends.
+17:44:47: Car[47, true] left WashingLine[3, true]
+17:44:47: Car[52, false] entered WashingLine[3, false]
+17:44:47: Washing of Car[52, false] begins.
+17:44:51: Interior cleaning of Car[73, true] ends.
+17:44:51: Car[73, true] left InteriorCleaningBox[1, true]
+17:44:51: no free washing lines. Car[73, true] must wait.
+17:44:51: 2 cars arrive.
+I'm Car[79, true]
+17:44:51: Car[79, true] entered InteriorCleaningBox[1, false]
+17:44:51: Interior cleaning of Car[79, true] begins.
+I'm Car[80, true]
+17:44:51: no free washing lines. Car[80, true] must wait.
+17:44:53: Washing of Car[51, false] ends.
+17:44:53: Car[51, false] left WashingLine[1, true]
+17:44:53: Car[54, false] entered WashingLine[1, false]
+17:44:53: Washing of Car[54, false] begins.
+17:44:55: Washing of Car[52, false] ends.
+17:44:55: Car[52, false] left WashingLine[3, true]
+17:44:55: Car[58, false] entered WashingLine[3, false]
+17:44:55: Washing of Car[58, false] begins.
+17:44:56: Washing of Car[44, true] ends.
+17:44:56: Car[44, true] left WashingLine[2, true]
+17:44:56: Car[57, false] entered WashingLine[2, false]
+17:44:56: Washing of Car[57, false] begins.
+17:44:56: Interior cleaning of Car[50, true] ends.
+17:44:56: Car[50, true] left InteriorCleaningBox[2, true]
+17:44:56: 2 cars arrive.
+I'm Car[81, true]
+17:44:56: Car[81, true] entered InteriorCleaningBox[2, false]
+17:44:56: Interior cleaning of Car[81, true] begins.
+I'm Car[82, true]
+17:44:56: no free washing lines. Car[82, true] must wait.
+17:44:59: Washing of Car[54, false] ends.
+17:44:59: Car[54, false] left WashingLine[1, true]
+17:44:59: Car[55, false] entered WashingLine[1, false]
+17:44:59: Washing of Car[55, false] begins.
+17:45:01: Washing of Car[58, false] ends.
+17:45:01: Car[58, false] left WashingLine[3, true]
+17:45:01: Car[53, true] entered WashingLine[3, false]
+17:45:01: Washing of Car[53, true] begins.
+17:45:01: Interior cleaning of Car[79, true] ends.
+17:45:01: Car[79, true] left InteriorCleaningBox[1, true]
+17:45:01: no free washing lines. Car[79, true] must wait.
+17:45:01: 2 cars arrive.
+I'm Car[83, true]
+17:45:01: Car[83, true] entered InteriorCleaningBox[1, false]
+I'm Car[84, true]
+17:45:01: no free washing lines. Car[84, true] must wait.
+17:45:01: Interior cleaning of Car[83, true] begins.
+17:45:06: Interior cleaning of Car[83, true] ends.
+17:45:06: 2 cars arrive.
+17:45:06: Car[83, true] left InteriorCleaningBox[1, true]
+17:45:06: no free washing lines. Car[83, true] must wait.
+I'm Car[85, true]
+17:45:06: Car[85, true] entered InteriorCleaningBox[1, false]
+17:45:06: Interior cleaning of Car[85, true] begins.
+I'm Car[86, true]
+17:45:06: no free washing lines. Car[86, true] must wait.
+17:45:07: Washing of Car[57, false] ends.
+17:45:07: Car[57, false] left WashingLine[2, true]
+17:45:07: Car[60, false] entered WashingLine[2, false]
+17:45:07: Washing of Car[60, false] begins.
+17:45:10: Washing of Car[55, false] ends.
+17:45:10: Car[55, false] left WashingLine[1, true]
+17:45:10: Car[61, false] entered WashingLine[1, false]
+17:45:10: Washing of Car[61, false] begins.
+17:45:11: Washing of Car[53, true] ends.
+17:45:11: Car[53, true] left WashingLine[3, true]
+17:45:11: Car[62, true] entered WashingLine[3, false]
+17:45:11: Washing of Car[62, true] begins.
+17:45:11: Interior cleaning of Car[81, true] ends.
+17:45:11: Car[81, true] left InteriorCleaningBox[2, true]
+17:45:11: no free washing lines. Car[81, true] must wait.
+17:45:11: 2 cars arrive.
+I'm Car[87, true]
+17:45:11: Car[87, true] entered InteriorCleaningBox[2, false]
+I'm Car[88, true]
+17:45:11: no free washing lines. Car[88, true] must wait.
+17:45:11: Interior cleaning of Car[87, true] begins.
+17:45:15: Washing of Car[60, false] ends.
+17:45:15: Car[60, false] left WashingLine[2, true]
+17:45:15: Car[56, true] entered WashingLine[2, false]
+17:45:15: Washing of Car[56, true] begins.
+17:45:16: 2 cars arrive.
+I'm Car[89, true]
+17:45:16: no free washing lines. Car[89, true] must wait.
+I'm Car[90, true]
+17:45:16: no free washing lines. Car[90, true] must wait.
+17:45:20: Washing of Car[61, false] ends.
+17:45:20: Car[61, false] left WashingLine[1, true]
+17:45:20: Car[59, true] entered WashingLine[1, false]
+17:45:20: Washing of Car[59, true] begins.
+17:45:21: Interior cleaning of Car[85, true] ends.
+17:45:21: Car[85, true] left InteriorCleaningBox[1, true]
+17:45:21: no free washing lines. Car[85, true] must wait.
+17:45:21: Interior cleaning of Car[87, true] ends.
+17:45:21: Car[87, true] left InteriorCleaningBox[2, true]
+17:45:21: no free washing lines. Car[87, true] must wait.
+17:45:21: --- now in 4. hour ---
+17:45:21: 2 cars arrive.
+I'm Car[91, true]
+17:45:21: Car[91, true] entered InteriorCleaningBox[1, false]
+17:45:21: Interior cleaning of Car[91, true] begins.
+I'm Car[92, true]
+17:45:21: Car[92, true] entered InteriorCleaningBox[2, false]
+17:45:21: Interior cleaning of Car[92, true] begins.
+17:45:22: Washing of Car[62, true] ends.
+17:45:22: Car[62, true] left WashingLine[3, true]
+17:45:22: no free interior cleaning boxes. Car[62, true] must wait.
+17:45:22: Car[63, false] entered WashingLine[3, false]
+17:45:22: Washing of Car[63, false] begins.
+17:45:25: Washing of Car[56, true] ends.
+17:45:25: Car[56, true] left WashingLine[2, true]
+17:45:25: Car[64, false] entered WashingLine[2, false]
+17:45:25: Washing of Car[64, false] begins.
+17:45:26: 1 cars arrive.
+I'm Car[93, true]
+17:45:26: no free washing lines. Car[93, true] must wait.
+17:45:30: Washing of Car[59, true] ends.
+17:45:30: Car[59, true] left WashingLine[1, true]
+17:45:30: Car[66, false] entered WashingLine[1, false]
+17:45:30: Washing of Car[66, false] begins.
+17:45:31: 2 cars arrive.
+I'm Car[94, true]
+17:45:31: no free washing lines. Car[94, true] must wait.
+I'm Car[95, true]
+17:45:31: no free washing lines. Car[95, true] must wait.
+17:45:33: Washing of Car[64, false] ends.
+17:45:33: Car[64, false] left WashingLine[2, true]
+17:45:33: Car[67, false] entered WashingLine[2, false]
+17:45:33: Washing of Car[67, false] begins.
+17:45:34: Washing of Car[63, false] ends.
+17:45:34: Car[63, false] left WashingLine[3, true]
+17:45:34: Car[65, true] entered WashingLine[3, false]
+17:45:34: Washing of Car[65, true] begins.
+17:45:36: Interior cleaning of Car[91, true] ends.
+17:45:36: Car[91, true] left InteriorCleaningBox[1, true]
+17:45:36: no free washing lines. Car[91, true] must wait.
+17:45:36: Interior cleaning of Car[92, true] ends.
+17:45:36: Car[92, true] left InteriorCleaningBox[2, true]
+17:45:36: no free washing lines. Car[92, true] must wait.
+17:45:36: Car[62, true] entered InteriorCleaningBox[1, false]
+17:45:36: Interior cleaning of Car[62, true] begins.
+17:45:36: 2 cars arrive.
+I'm Car[96, true]
+17:45:36: Car[96, true] entered InteriorCleaningBox[2, false]
+17:45:36: Interior cleaning of Car[96, true] begins.
+I'm Car[97, true]
+17:45:36: no free washing lines. Car[97, true] must wait.
+17:45:39: Washing of Car[65, true] ends.
+17:45:39: Car[65, true] left WashingLine[3, true]
+17:45:39: Car[69, true] entered WashingLine[3, false]
+17:45:39: Washing of Car[69, true] begins.
+17:45:41: Washing of Car[67, false] ends.
+17:45:41: Car[67, false] left WashingLine[2, true]
+17:45:41: Car[70, true] entered WashingLine[2, false]
+17:45:41: Washing of Car[70, true] begins.
+17:45:41: Interior cleaning of Car[96, true] ends.
+17:45:41: 2 cars arrive.
+17:45:41: Car[96, true] left InteriorCleaningBox[2, true]
+17:45:41: no free washing lines. Car[96, true] must wait.
+I'm Car[98, true]
+17:45:41: Car[98, true] entered InteriorCleaningBox[2, false]
+17:45:41: Interior cleaning of Car[98, true] begins.
+I'm Car[99, true]
+17:45:41: no free washing lines. Car[99, true] must wait.
+17:45:42: Washing of Car[66, false] ends.
+17:45:42: Car[66, false] left WashingLine[1, true]
+17:45:42: Car[72, true] entered WashingLine[1, false]
+17:45:42: Washing of Car[72, true] begins.
+17:45:44: Washing of Car[69, true] ends.
+17:45:44: Car[69, true] left WashingLine[3, true]
+17:45:44: no free interior cleaning boxes. Car[69, true] must wait.
+17:45:44: Car[68, true] entered WashingLine[3, false]
+17:45:44: Washing of Car[68, true] begins.
+17:45:46: Interior cleaning of Car[62, true] ends.
+17:45:46: Car[62, true] left InteriorCleaningBox[1, true]
+17:45:46: Car[69, true] entered InteriorCleaningBox[1, false]
+17:45:46: Interior cleaning of Car[69, true] begins.
+17:45:46: Interior cleaning of Car[98, true] ends.
+17:45:46: 1 cars arrive.
+17:45:46: Car[98, true] left InteriorCleaningBox[2, true]
+17:45:46: no free washing lines. Car[98, true] must wait.
+I'm Car[100, true]
+17:45:46: Car[100, true] entered InteriorCleaningBox[2, false]
+17:45:46: Interior cleaning of Car[100, true] begins.
+17:45:47: Washing of Car[72, true] ends.
+17:45:47: Car[72, true] left WashingLine[1, true]
+17:45:47: no free interior cleaning boxes. Car[72, true] must wait.
+17:45:47: Car[71, true] entered WashingLine[1, false]
+17:45:47: Washing of Car[71, true] begins.
+17:45:49: Washing of Car[68, true] ends.
+17:45:49: Car[68, true] left WashingLine[3, true]
+17:45:49: Car[75, true] entered WashingLine[3, false]
+17:45:49: Washing of Car[75, true] begins.
+17:45:51: Interior cleaning of Car[100, true] ends.
+17:45:51: Car[100, true] left InteriorCleaningBox[2, true]
+17:45:51: 2 cars arrive.
+17:45:51: no free washing lines. Car[100, true] must wait.
+17:45:51: Car[72, true] entered InteriorCleaningBox[2, false]
+17:45:51: Interior cleaning of Car[72, true] begins.
+I'm Car[101, true]
+17:45:51: no free washing lines. Car[101, true] must wait.
+I'm Car[102, true]
+17:45:51: no free washing lines. Car[102, true] must wait.
+17:45:52: Washing of Car[70, true] ends.
+17:45:52: Car[70, true] left WashingLine[2, true]
+17:45:52: no free interior cleaning boxes. Car[70, true] must wait.
+17:45:52: Car[76, true] entered WashingLine[2, false]
+17:45:52: Washing of Car[76, true] begins.
+17:45:56: Interior cleaning of Car[69, true] ends.
+17:45:56: Car[69, true] left InteriorCleaningBox[1, true]
+17:45:56: Car[70, true] entered InteriorCleaningBox[1, false]
+17:45:56: Interior cleaning of Car[70, true] begins.
+17:45:56: 2 cars arrive.
+I'm Car[103, true]
+17:45:56: no free washing lines. Car[103, true] must wait.
+I'm Car[104, true]
+17:45:56: no free washing lines. Car[104, true] must wait.
+17:45:59: Washing of Car[71, true] ends.
+17:45:59: Car[71, true] left WashingLine[1, true]
+17:45:59: Car[74, true] entered WashingLine[1, false]
+17:45:59: Washing of Car[74, true] begins.
+17:46:01: Washing of Car[76, true] ends.
+17:46:01: Car[76, true] left WashingLine[2, true]
+17:46:01: no free interior cleaning boxes. Car[76, true] must wait.
+17:46:01: Car[77, true] entered WashingLine[2, false]
+17:46:01: Washing of Car[77, true] begins.
+17:46:01: Washing of Car[75, true] ends.
+17:46:01: Car[75, true] left WashingLine[3, true]
+17:46:01: no free interior cleaning boxes. Car[75, true] must wait.
+17:46:01: Car[78, true] entered WashingLine[3, false]
+17:46:01: Washing of Car[78, true] begins.
+17:46:01: 1 cars arrive.
+I'm Car[105, true]
+17:46:01: no free washing lines. Car[105, true] must wait.
+17:46:06: Interior cleaning of Car[72, true] ends.
+17:46:06: Car[72, true] left InteriorCleaningBox[2, true]
+17:46:06: Car[76, true] entered InteriorCleaningBox[2, false]
+17:46:06: Interior cleaning of Car[76, true] begins.
+17:46:06: 2 cars arrive.
+I'm Car[106, true]
+17:46:06: no free washing lines. Car[106, true] must wait.
+I'm Car[107, true]
+17:46:06: no free washing lines. Car[107, true] must wait.
+17:46:07: Washing of Car[77, true] ends.
+17:46:07: Car[77, true] left WashingLine[2, true]
+17:46:07: no free interior cleaning boxes. Car[77, true] must wait.
+17:46:07: Car[73, true] entered WashingLine[2, false]
+17:46:07: Washing of Car[73, true] begins.
+17:46:09: Washing of Car[74, true] ends.
+17:46:09: Car[74, true] left WashingLine[1, true]
+17:46:09: Car[80, true] entered WashingLine[1, false]
+17:46:09: Washing of Car[80, true] begins.
+17:46:11: Interior cleaning of Car[70, true] ends.
+17:46:11: Car[70, true] left InteriorCleaningBox[1, true]
+17:46:11: Car[75, true] entered InteriorCleaningBox[1, false]
+17:46:11: Interior cleaning of Car[75, true] begins.
+17:46:11: 2 cars arrive.
+I'm Car[108, true]
+17:46:11: no free washing lines. Car[108, true] must wait.
+I'm Car[109, true]
+17:46:11: no free washing lines. Car[109, true] must wait.
+17:46:13: Washing of Car[78, true] ends.
+17:46:13: Car[78, true] left WashingLine[3, true]
+17:46:13: no free interior cleaning boxes. Car[78, true] must wait.
+17:46:13: Car[82, true] entered WashingLine[3, false]
+17:46:13: Washing of Car[82, true] begins.
+17:46:14: Washing of Car[73, true] ends.
+17:46:14: Car[73, true] left WashingLine[2, true]
+17:46:14: Car[79, true] entered WashingLine[2, false]
+17:46:14: Washing of Car[79, true] begins.
+17:46:16: 2 cars arrive.
+I'm Car[110, true]
+17:46:16: no free washing lines. Car[110, true] must wait.
+I'm Car[111, true]
+17:46:16: no free washing lines. Car[111, true] must wait.
+17:46:18: Washing of Car[82, true] ends.
+17:46:18: Car[82, true] left WashingLine[3, true]
+17:46:18: no free interior cleaning boxes. Car[82, true] must wait.
+17:46:18: Car[84, true] entered WashingLine[3, false]
+17:46:18: Washing of Car[84, true] begins.
+17:46:19: Washing of Car[80, true] ends.
+17:46:19: Car[80, true] left WashingLine[1, true]
+17:46:19: no free interior cleaning boxes. Car[80, true] must wait.
+17:46:19: Car[83, true] entered WashingLine[1, false]
+17:46:19: Washing of Car[83, true] begins.
+17:46:21: Washing of Car[79, true] ends.
+17:46:21: Car[79, true] left WashingLine[2, true]
+17:46:21: Car[86, true] entered WashingLine[2, false]
+17:46:21: Washing of Car[86, true] begins.
+17:46:21: Interior cleaning of Car[75, true] ends.
+17:46:21: Car[75, true] left InteriorCleaningBox[1, true]
+17:46:21: Car[77, true] entered InteriorCleaningBox[1, false]
+17:46:21: Interior cleaning of Car[77, true] begins.
+17:46:21: Interior cleaning of Car[76, true] ends.
+17:46:21: Car[76, true] left InteriorCleaningBox[2, true]
+17:46:21: Car[78, true] entered InteriorCleaningBox[2, false]
+17:46:21: Interior cleaning of Car[78, true] begins.
+17:46:21: --- 4 hours are over. no new cars will arrive. ---
+17:46:25: Washing of Car[84, true] ends.
+17:46:25: Car[84, true] left WashingLine[3, true]
+17:46:25: no free interior cleaning boxes. Car[84, true] must wait.
+17:46:25: Car[81, true] entered WashingLine[3, false]
+17:46:25: Washing of Car[81, true] begins.
+17:46:25: Washing of Car[83, true] ends.
+17:46:25: Car[83, true] left WashingLine[1, true]
+17:46:25: Car[88, true] entered WashingLine[1, false]
+17:46:25: Washing of Car[88, true] begins.
+17:46:26: Interior cleaning of Car[77, true] ends.
+17:46:26: Car[77, true] left InteriorCleaningBox[1, true]
+17:46:26: Car[82, true] entered InteriorCleaningBox[1, false]
+17:46:26: Interior cleaning of Car[82, true] begins.
+17:46:31: Interior cleaning of Car[78, true] ends.
+17:46:31: Car[78, true] left InteriorCleaningBox[2, true]
+17:46:31: Car[80, true] entered InteriorCleaningBox[2, false]
+17:46:31: Interior cleaning of Car[80, true] begins.
+17:46:33: Washing of Car[86, true] ends.
+17:46:33: Car[86, true] left WashingLine[2, true]
+17:46:33: no free interior cleaning boxes. Car[86, true] must wait.
+17:46:33: Car[89, true] entered WashingLine[2, false]
+17:46:33: Washing of Car[89, true] begins.
+17:46:34: Washing of Car[81, true] ends.
+17:46:34: Car[81, true] left WashingLine[3, true]
+17:46:34: Car[90, true] entered WashingLine[3, false]
+17:46:34: Washing of Car[90, true] begins.
+17:46:34: Washing of Car[88, true] ends.
+17:46:34: Car[88, true] left WashingLine[1, true]
+17:46:34: no free interior cleaning boxes. Car[88, true] must wait.
+17:46:34: Car[85, true] entered WashingLine[1, false]
+17:46:34: Washing of Car[85, true] begins.
+17:46:40: Washing of Car[85, true] ends.
+17:46:40: Car[85, true] left WashingLine[1, true]
+17:46:40: Car[87, true] entered WashingLine[1, false]
+17:46:40: Washing of Car[87, true] begins.
+17:46:41: Washing of Car[89, true] ends.
+17:46:41: Car[89, true] left WashingLine[2, true]
+17:46:41: no free interior cleaning boxes. Car[89, true] must wait.
+17:46:41: Car[93, true] entered WashingLine[2, false]
+17:46:41: Washing of Car[93, true] begins.
+17:46:41: Interior cleaning of Car[82, true] ends.
+17:46:41: Car[82, true] left InteriorCleaningBox[1, true]
+17:46:41: Car[84, true] entered InteriorCleaningBox[1, false]
+17:46:41: Interior cleaning of Car[84, true] begins.
+17:46:45: Washing of Car[90, true] ends.
+17:46:45: Car[90, true] left WashingLine[3, true]
+17:46:45: no free interior cleaning boxes. Car[90, true] must wait.
+17:46:45: Car[94, true] entered WashingLine[3, false]
+17:46:45: Washing of Car[94, true] begins.
+17:46:46: Washing of Car[93, true] ends.
+17:46:46: Car[93, true] left WashingLine[2, true]
+17:46:46: no free interior cleaning boxes. Car[93, true] must wait.
+17:46:46: Car[95, true] entered WashingLine[2, false]
+17:46:46: Washing of Car[95, true] begins.
+17:46:46: Interior cleaning of Car[84, true] ends.
+17:46:46: Car[84, true] left InteriorCleaningBox[1, true]
+17:46:46: Car[86, true] entered InteriorCleaningBox[1, false]
+17:46:46: Interior cleaning of Car[86, true] begins.
+17:46:46: Interior cleaning of Car[80, true] ends.
+17:46:46: Car[80, true] left InteriorCleaningBox[2, true]
+17:46:46: Car[88, true] entered InteriorCleaningBox[2, false]
+17:46:46: Interior cleaning of Car[88, true] begins.
+17:46:49: Washing of Car[87, true] ends.
+17:46:49: Car[87, true] left WashingLine[1, true]
+17:46:49: Car[91, true] entered WashingLine[1, false]
+17:46:49: Washing of Car[91, true] begins.
+17:46:50: Washing of Car[94, true] ends.
+17:46:50: Car[94, true] left WashingLine[3, true]
+17:46:50: no free interior cleaning boxes. Car[94, true] must wait.
+17:46:50: Car[92, true] entered WashingLine[3, false]
+17:46:50: Washing of Car[92, true] begins.
+17:46:51: Washing of Car[95, true] ends.
+17:46:51: Car[95, true] left WashingLine[2, true]
+17:46:51: no free interior cleaning boxes. Car[95, true] must wait.
+17:46:51: Car[97, true] entered WashingLine[2, false]
+17:46:51: Washing of Car[97, true] begins.
+17:46:51: Interior cleaning of Car[86, true] ends.
+17:46:51: Car[86, true] left InteriorCleaningBox[1, true]
+17:46:51: Car[89, true] entered InteriorCleaningBox[1, false]
+17:46:51: Interior cleaning of Car[89, true] begins.
+17:46:55: Washing of Car[92, true] ends.
+17:46:55: Car[92, true] left WashingLine[3, true]
+17:46:55: Car[96, true] entered WashingLine[3, false]
+17:46:55: Washing of Car[96, true] begins.
+17:46:56: Interior cleaning of Car[88, true] ends.
+17:46:56: Car[88, true] left InteriorCleaningBox[2, true]
+17:46:56: Car[90, true] entered InteriorCleaningBox[2, false]
+17:46:56: Interior cleaning of Car[90, true] begins.
+17:47:01: Washing of Car[91, true] ends.
+17:47:01: Car[91, true] left WashingLine[1, true]
+17:47:01: Car[99, true] entered WashingLine[1, false]
+17:47:01: Washing of Car[99, true] begins.
+17:47:01: Interior cleaning of Car[89, true] ends.
+17:47:01: Car[89, true] left InteriorCleaningBox[1, true]
+17:47:01: Car[93, true] entered InteriorCleaningBox[1, false]
+17:47:01: Interior cleaning of Car[93, true] begins.
+17:47:01: Interior cleaning of Car[90, true] ends.
+17:47:01: Car[90, true] left InteriorCleaningBox[2, true]
+17:47:01: Car[94, true] entered InteriorCleaningBox[2, false]
+17:47:01: Interior cleaning of Car[94, true] begins.
+17:47:03: Washing of Car[97, true] ends.
+17:47:03: Car[97, true] left WashingLine[2, true]
+17:47:03: no free interior cleaning boxes. Car[97, true] must wait.
+17:47:03: Car[98, true] entered WashingLine[2, false]
+17:47:03: Washing of Car[98, true] begins.
+17:47:06: Washing of Car[99, true] ends.
+17:47:06: Car[99, true] left WashingLine[1, true]
+17:47:06: no free interior cleaning boxes. Car[99, true] must wait.
+17:47:06: Car[100, true] entered WashingLine[1, false]
+17:47:06: Washing of Car[100, true] begins.
+17:47:06: Interior cleaning of Car[94, true] ends.
+17:47:06: Car[94, true] left InteriorCleaningBox[2, true]
+17:47:06: Car[95, true] entered InteriorCleaningBox[2, false]
+17:47:06: Interior cleaning of Car[95, true] begins.
+17:47:07: Washing of Car[96, true] ends.
+17:47:07: Car[96, true] left WashingLine[3, true]
+17:47:07: Car[101, true] entered WashingLine[3, false]
+17:47:07: Washing of Car[101, true] begins.
+17:47:11: Interior cleaning of Car[95, true] ends.
+17:47:11: Car[95, true] left InteriorCleaningBox[2, true]
+17:47:11: Car[97, true] entered InteriorCleaningBox[2, false]
+17:47:11: Interior cleaning of Car[97, true] begins.
+17:47:14: Washing of Car[98, true] ends.
+17:47:14: Car[98, true] left WashingLine[2, true]
+17:47:14: Car[102, true] entered WashingLine[2, false]
+17:47:14: Washing of Car[102, true] begins.
+17:47:14: Washing of Car[100, true] ends.
+17:47:14: Car[100, true] left WashingLine[1, true]
+17:47:14: Car[103, true] entered WashingLine[1, false]
+17:47:14: Washing of Car[103, true] begins.
+17:47:16: Interior cleaning of Car[93, true] ends.
+17:47:16: Car[93, true] left InteriorCleaningBox[1, true]
+17:47:16: Car[99, true] entered InteriorCleaningBox[1, false]
+17:47:16: Interior cleaning of Car[99, true] begins.
+17:47:16: Interior cleaning of Car[97, true] ends.
+17:47:16: Car[97, true] left InteriorCleaningBox[2, true]
+17:47:17: Washing of Car[101, true] ends.
+17:47:17: Car[101, true] left WashingLine[3, true]
+17:47:17: Car[101, true] entered InteriorCleaningBox[2, false]
+17:47:17: Interior cleaning of Car[101, true] begins.
+17:47:17: Car[104, true] entered WashingLine[3, false]
+17:47:17: Washing of Car[104, true] begins.
+17:47:20: Washing of Car[102, true] ends.
+17:47:20: Car[102, true] left WashingLine[2, true]
+17:47:20: no free interior cleaning boxes. Car[102, true] must wait.
+17:47:20: Car[105, true] entered WashingLine[2, false]
+17:47:20: Washing of Car[105, true] begins.
+17:47:24: Washing of Car[103, true] ends.
+17:47:24: Car[103, true] left WashingLine[1, true]
+17:47:24: no free interior cleaning boxes. Car[103, true] must wait.
+17:47:24: Car[106, true] entered WashingLine[1, false]
+17:47:24: Washing of Car[106, true] begins.
+17:47:25: Washing of Car[105, true] ends.
+17:47:25: Car[105, true] left WashingLine[2, true]
+17:47:25: no free interior cleaning boxes. Car[105, true] must wait.
+17:47:25: Car[107, true] entered WashingLine[2, false]
+17:47:25: Washing of Car[107, true] begins.
+17:47:26: Interior cleaning of Car[99, true] ends.
+17:47:26: Car[99, true] left InteriorCleaningBox[1, true]
+17:47:26: Car[102, true] entered InteriorCleaningBox[1, false]
+17:47:26: Interior cleaning of Car[102, true] begins.
+17:47:29: Washing of Car[104, true] ends.
+17:47:29: Car[104, true] left WashingLine[3, true]
+17:47:29: no free interior cleaning boxes. Car[104, true] must wait.
+17:47:29: Car[108, true] entered WashingLine[3, false]
+17:47:29: Washing of Car[108, true] begins.
+17:47:31: Interior cleaning of Car[102, true] ends.
+17:47:31: Car[102, true] left InteriorCleaningBox[1, true]
+17:47:31: Car[103, true] entered InteriorCleaningBox[1, false]
+17:47:31: Interior cleaning of Car[103, true] begins.
+17:47:32: Washing of Car[107, true] ends.
+17:47:32: Car[107, true] left WashingLine[2, true]
+17:47:32: no free interior cleaning boxes. Car[107, true] must wait.
+17:47:32: Car[109, true] entered WashingLine[2, false]
+17:47:32: Washing of Car[109, true] begins.
+17:47:32: Interior cleaning of Car[101, true] ends.
+17:47:32: Car[101, true] left InteriorCleaningBox[2, true]
+17:47:32: Car[105, true] entered InteriorCleaningBox[2, false]
+17:47:32: Interior cleaning of Car[105, true] begins.
+17:47:32: Washing of Car[106, true] ends.
+17:47:32: Car[106, true] left WashingLine[1, true]
+17:47:32: no free interior cleaning boxes. Car[106, true] must wait.
+17:47:32: Car[110, true] entered WashingLine[1, false]
+17:47:32: Washing of Car[110, true] begins.
+17:47:38: Washing of Car[110, true] ends.
+17:47:38: Washing of Car[108, true] ends.
+17:47:38: Car[108, true] left WashingLine[3, true]
+17:47:38: no free interior cleaning boxes. Car[108, true] must wait.
+17:47:38: Car[110, true] left WashingLine[1, true]
+17:47:38: no free interior cleaning boxes. Car[110, true] must wait.
+17:47:38: Car[111, true] entered WashingLine[1, false]
+17:47:38: Washing of Car[111, true] begins.
+17:47:40: Washing of Car[109, true] ends.
+17:47:40: Car[109, true] left WashingLine[2, true]
+17:47:40: no free interior cleaning boxes. Car[109, true] must wait.
+17:47:46: Interior cleaning of Car[103, true] ends.
+17:47:46: Car[103, true] left InteriorCleaningBox[1, true]
+17:47:46: Car[104, true] entered InteriorCleaningBox[1, false]
+17:47:46: Interior cleaning of Car[104, true] begins.
+17:47:47: Interior cleaning of Car[105, true] ends.
+17:47:47: Car[105, true] left InteriorCleaningBox[2, true]
+17:47:47: Car[107, true] entered InteriorCleaningBox[2, false]
+17:47:47: Interior cleaning of Car[107, true] begins.
+17:47:50: Washing of Car[111, true] ends.
+17:47:50: Car[111, true] left WashingLine[1, true]
+17:47:50: no free interior cleaning boxes. Car[111, true] must wait.
+17:47:56: Interior cleaning of Car[104, true] ends.
+17:47:56: Car[104, true] left InteriorCleaningBox[1, true]
+17:47:56: Car[106, true] entered InteriorCleaningBox[1, false]
+17:47:56: Interior cleaning of Car[106, true] begins.
+17:47:57: Interior cleaning of Car[107, true] ends.
+17:47:57: Car[107, true] left InteriorCleaningBox[2, true]
+17:47:57: Car[108, true] entered InteriorCleaningBox[2, false]
+17:47:57: Interior cleaning of Car[108, true] begins.
+17:48:01: Interior cleaning of Car[106, true] ends.
+17:48:01: Car[106, true] left InteriorCleaningBox[1, true]
+17:48:01: Car[110, true] entered InteriorCleaningBox[1, false]
+17:48:01: Interior cleaning of Car[110, true] begins.
+17:48:06: Interior cleaning of Car[110, true] ends.
+17:48:06: Car[110, true] left InteriorCleaningBox[1, true]
+17:48:06: Car[109, true] entered InteriorCleaningBox[1, false]
+17:48:06: Interior cleaning of Car[109, true] begins.
+17:48:12: Interior cleaning of Car[108, true] ends.
+17:48:12: Car[108, true] left InteriorCleaningBox[2, true]
+17:48:12: Car[111, true] entered InteriorCleaningBox[2, false]
+17:48:12: Interior cleaning of Car[111, true] begins.
+17:48:16: Interior cleaning of Car[109, true] ends.
+17:48:16: Car[109, true] left InteriorCleaningBox[1, true]
+17:48:28: Interior cleaning of Car[111, true] ends.
+17:48:28: Car[111, true] left InteriorCleaningBox[2, true]
