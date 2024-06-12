@@ -15,7 +15,6 @@ public class Car implements Runnable {
   @Override
   public void run() {
     System.err.println("I'm " + toString());
-/*
     if (!this.requiresInteriorCleaning) {
       this.washing();
       return;
@@ -30,7 +29,6 @@ public class Car implements Runnable {
 
     this.washing();
     this.interiorCleaning();
-*/
   }
 
   private void washing() {

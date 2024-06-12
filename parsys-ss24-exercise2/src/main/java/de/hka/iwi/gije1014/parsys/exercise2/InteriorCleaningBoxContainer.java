@@ -4,11 +4,17 @@ import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class InteriorCleaningBoxContainer {
 
   private final Customizer customizer;
   private final List<InteriorCleaningBox> interiorCleaningBoxes;
+
+  private final Lock lock = new ReentrantLock();
+  private final Condition condition = lock.newCondition();
 
   public InteriorCleaningBoxContainer(Customizer customizer) {
     this.customizer = customizer;
@@ -28,47 +34,51 @@ public class InteriorCleaningBoxContainer {
     this.updateAvailableInteriorCleaningBoxes();
   }
 
-//  public synchronized InteriorCleaningBox getInteriorCleaningBox(Car car) {
-  public InteriorCleaningBox getInteriorCleaningBox(Car car) {
-    while (!hasAvailableInteriorCleaningBox()) {
-      System.err.println(getTimestamp() + ": no free interior cleaning boxes. " + car + " must wait.");
+  private InteriorCleaningBox getInteriorCleaningBox(Car car) {
+    lock.lock();
+    try {
       try {
-        wait();
+        while (!hasAvailableInteriorCleaningBox()) {
+          System.err.println(getTimestamp() + ": no free interior cleaning boxes. " + car + " must wait.");
+          condition.await();
+        }
+        return getAvailableInteriorCleaningBox();
       } catch (InterruptedException ex) {
         System.err.println("Something went wrong while waiting for an available interior cleaning box.");
+        return null;
       }
+    } finally {
+      lock.unlock();
     }
-    return getAvailableInteriorCleaningBox();
   }
 
-//  public synchronized boolean hasAvailableInteriorCleaningBox() {
   public boolean hasAvailableInteriorCleaningBox() {
     return this.getAvailableInteriorCleaningBox() != null;
   }
 
-//  private synchronized InteriorCleaningBox getAvailableInteriorCleaningBox() {
   private InteriorCleaningBox getAvailableInteriorCleaningBox() {
-    return interiorCleaningBoxes.stream()
-               .filter(interiorCleaningBox -> interiorCleaningBox.isAvailable())
-               .findFirst()
-               .orElse(null);
+    lock.lock();
+    try {
+      return interiorCleaningBoxes.stream()
+                 .filter(interiorCleaningBox -> interiorCleaningBox.isAvailable())
+                 .findFirst()
+                 .orElse(null);
+    } finally {
+      lock.unlock();
+    }
   }
 
-//  private synchronized void updateAvailableInteriorCleaningBoxes() {
   private void updateAvailableInteriorCleaningBoxes() {
-    notify();
+    lock.lock();
+    try {
+      condition.signal();
+    } finally {
+      lock.unlock();
+    }
   }
 
   private LocalTime getTimestamp() {
     return LocalTime.now().truncatedTo(ChronoUnit.SECONDS);
-  }
-
-  // for debugging only
-  public void printCounters() {
-    for (InteriorCleaningBox interiorCleaningBox : interiorCleaningBoxes) {
-      System.err.println(interiorCleaningBox + " enterCounter: " + interiorCleaningBox.getEnterCounter());
-      System.err.println(interiorCleaningBox + " leaveCounter: " + interiorCleaningBox.getLeaveCounter());
-    }
   }
 
 }

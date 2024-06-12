@@ -15,42 +15,46 @@ public class WashingLine {
   private final Lock lock = new ReentrantLock();
   private final Condition condition = lock.newCondition();
 
-  // for debugging only
-  private int enterCounter;
-  private int leaveCounter;
-
   public WashingLine(Customizer customizer, int id) {
     this.customizer = customizer;
     this.id = id;
     this.isFree = true;
-    this.enterCounter = 0;
-    this.leaveCounter = 0;
   }
 
-//  public synchronized void enter(Car car) {
   public void enter(Car car) {
-    this.isFree = false;
-    System.err.println(getTimestamp() + ": " + car + " entered " + this.toString());
-    this.enterCounter++;
-  }
-
-//  public synchronized void leave(Car car) {
-  public void leave(Car car) {
-    this.isFree = true;
-    System.err.println(getTimestamp() + ": " + car + " left " + this.toString());
-    this.leaveCounter++;
-  }
-
-//  public synchronized void wash(Car car) {
-  public void wash(Car car) {
-    int washingTime = this.customizer.getDurationForWashing();
-    System.err.println(getTimestamp() + ": Washing of " + car + " begins.");
+    lock.lock();
     try {
-      Thread.sleep(washingTime * 1000);
-    } catch (InterruptedException ex) {
-      System.err.println("Something went wrong while washing " + car);
+      this.isFree = false;
+      System.err.println(getTimestamp() + ": " + car + " entered " + this.toString());
+    } finally {
+      lock.unlock();
     }
-    System.err.println(getTimestamp() + ": Washing of " + car + " ends.");
+  }
+
+  public void leave(Car car) {
+    lock.lock();
+    try {
+      this.isFree = true;
+      System.err.println(getTimestamp() + ": " + car + " left " + this.toString());
+    } finally {
+      lock.unlock();
+    }
+  }
+
+  public void wash(Car car) {
+    lock.lock();
+    try {
+      int washingTime = this.customizer.getDurationForWashing();
+      System.err.println(getTimestamp() + ": Washing of " + car + " begins.");
+      try {
+        Thread.sleep(washingTime * 1000);
+      } catch (InterruptedException ex) {
+        System.err.println("Something went wrong while washing " + car);
+      }
+      System.err.println(getTimestamp() + ": Washing of " + car + " ends.");
+    } finally {
+      lock.unlock();
+    }
   }
 
   public boolean isAvailable() {
@@ -64,16 +68,6 @@ public class WashingLine {
   @Override
   public String toString() {
     return this.getClass().getSimpleName() + "[" + this.id + ", " + this.isFree + "]";
-  }
-
-  // for debugging only
-  public int getEnterCounter() {
-    return this.enterCounter;
-  }
-
-  // for debugging only
-  public int getLeaveCounter() {
-    return this.leaveCounter;
   }
 
 }

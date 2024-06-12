@@ -4,11 +4,17 @@ import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class WashingLineContainer {
 
   private final Customizer customizer;
   private final List<WashingLine> washingLines;
+
+  private final Lock lock = new ReentrantLock();
+  private final Condition condition = lock.newCondition();
 
   public WashingLineContainer(Customizer customizer) {
     this.customizer = customizer;
@@ -28,48 +34,51 @@ public class WashingLineContainer {
     this.updateAvailableWashingLines();
   }
 
-//  public synchronized WashingLine getWashingLine(Car car) {
-  public WashingLine getWashingLine(Car car) {
-    while (!hasAvailableWashingLine()) {
-      System.err.println(getTimestamp() + ": no free washing lines. " + car + " must wait.");
-
+  private WashingLine getWashingLine(Car car) {
+    lock.lock();
+    try {
       try {
-        wait();
+        while (!hasAvailableWashingLine()) {
+          System.err.println(getTimestamp() + ": no free washing lines. " + car + " must wait.");
+          condition.await();
+        }
+        return getAvailableWashingLine();
       } catch (InterruptedException ex) {
         System.err.println("Something went wrong while waiting for an available washing line.");
+        return null;
       }
+    } finally {
+      lock.unlock();
     }
-    return getAvailableWashingLine();
   }
 
-//  public synchronized boolean hasAvailableWashingLine() {
-  public boolean hasAvailableWashingLine() {
+  private boolean hasAvailableWashingLine() {
     return this.getAvailableWashingLine() != null;
   }
 
-//  private synchronized WashingLine getAvailableWashingLine() {
   private WashingLine getAvailableWashingLine() {
-    return washingLines.stream()
-               .filter(washingLine -> washingLine.isAvailable())
-               .findFirst()
-               .orElse(null);
+    lock.lock();
+    try {
+      return washingLines.stream()
+                 .filter(washingLine -> washingLine.isAvailable())
+                 .findFirst()
+                 .orElse(null);
+    } finally {
+      lock.unlock();
+    }
   }
 
-//  private synchronized void updateAvailableWashingLines() {
   private void updateAvailableWashingLines() {
-    notify();
+    lock.lock();
+    try {
+      condition.signal();
+    } finally {
+      lock.unlock();
+    }
   }
 
   private LocalTime getTimestamp() {
     return LocalTime.now().truncatedTo(ChronoUnit.SECONDS);
-  }
-
-  // for debugging only
-  public void printCounters() {
-    for (WashingLine washingLine : washingLines) {
-      System.err.println(washingLine + " enterCounter: " + washingLine.getEnterCounter());
-      System.err.println(washingLine + " leaveCounter: " + washingLine.getLeaveCounter());
-    }
   }
 
 }

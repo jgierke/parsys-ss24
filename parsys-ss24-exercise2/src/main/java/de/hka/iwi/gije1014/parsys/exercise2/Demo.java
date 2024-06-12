@@ -34,8 +34,8 @@ public class Demo {
 
     arrivalScheduler.scheduleAtFixedRate(() -> {
       if ((System.currentTimeMillis() - start) > 240000) {
-        //pool.shutdown();
         arrivalScheduler.shutdown();
+        pool.shutdown();
         System.err.println(getTimestamp() + ": --- 4 hours are over. no new cars will arrive. ---");
         return;
       }

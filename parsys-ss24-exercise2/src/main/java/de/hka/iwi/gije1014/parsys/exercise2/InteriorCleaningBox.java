@@ -15,42 +15,46 @@ public class InteriorCleaningBox {
   private final Lock lock = new ReentrantLock();
   private final Condition condition = lock.newCondition();
 
-  // for debugging only
-  private int enterCounter;
-  private int leaveCounter;
-
   public InteriorCleaningBox(Customizer customizer, int id) {
     this.customizer = customizer;
     this.id = id;
     this.isFree = true;
-    this.enterCounter = 0;
-    this.leaveCounter = 0;
   }
 
-//  public synchronized void enter(Car car) {
   public void enter(Car car) {
-    this.isFree = false;
-    System.err.println(getTimestamp() + ": " + car + " entered " + this.toString());
-    this.enterCounter++;
-  }
-
-//  public synchronized void leave(Car car) {
-  public void leave(Car car) {
-    this.isFree = true;
-    System.err.println(getTimestamp() + ": " + car + " left " + this.toString());
-    this.leaveCounter++;
-  }
-
-//  public synchronized void clean(Car car) {
-  public void clean(Car car) {
-    int cleaningTime = this.customizer.getDurationForInteriorCleaning();
-    System.err.println(getTimestamp() + ": Interior cleaning of " + car + " begins.");
+    lock.lock();
     try {
-      Thread.sleep(cleaningTime * 1000);
-    } catch (InterruptedException ex) {
-      System.err.println("Something went wrong while interior cleaning " + car);
+      this.isFree = false;
+      System.err.println(getTimestamp() + ": " + car + " entered " + this.toString());
+    } finally {
+      lock.unlock();
     }
-    System.err.println(getTimestamp() + ": Interior cleaning of " + car + " ends.");
+  }
+
+  public void leave(Car car) {
+    lock.lock();
+    try {
+      this.isFree = true;
+      System.err.println(getTimestamp() + ": " + car + " left " + this.toString());
+    } finally {
+      lock.unlock();
+    }
+  }
+
+  public void clean(Car car) {
+    lock.lock();
+    try {
+      int cleaningTime = this.customizer.getDurationForInteriorCleaning();
+      System.err.println(getTimestamp() + ": Interior cleaning of " + car + " begins.");
+      try {
+        Thread.sleep(cleaningTime * 1000);
+      } catch (InterruptedException ex) {
+        System.err.println("Something went wrong while interior cleaning " + car);
+      }
+      System.err.println(getTimestamp() + ": Interior cleaning of " + car + " ends.");
+    } finally {
+      lock.unlock();
+    }
   }
 
   public boolean isAvailable() {
@@ -64,16 +68,6 @@ public class InteriorCleaningBox {
   @Override
   public String toString() {
     return this.getClass().getSimpleName() + "[" + this.id + ", " + this.isFree + "]";
-  }
-
-  // for debugging only
-  public int getEnterCounter() {
-    return this.enterCounter;
-  }
-
-  // for debugging only
-  public int getLeaveCounter() {
-    return this.leaveCounter;
   }
 
 }
